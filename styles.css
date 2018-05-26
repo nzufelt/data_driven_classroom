@@ -1,0 +1,123 @@
+/* every page */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  text-align: center;
+  font-family: 'Roboto', Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-color: white;
+
+}
+
+header {
+  width: 100vw;
+  background-color: rgb(22, 89, 172);
+  color: rgb(209, 209, 209);
+  padding: 2em;
+}
+
+/* Navs within header */
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  width: 100vw; /* BUG  issue with header's padding */
+  background-color: rgb(231, 174, 210);
+  height: 3em;
+}
+
+nav li {
+  display: block;
+  list-style: none;
+  width: 20vw;
+}
+
+nav li a {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+/* specific to intro? */
+
+
+
+
+/* Old */
+.button-link {
+  line-height: 4em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+}
+
+.choice {
+  width: 90%;
+  height: 4em;
+  border-radius: 10px;
+  background-color: #0058a0;
+  margin: 0 auto;
+  margin-top: 2em;
+  -webkit-transition: background-color 0.3s; /* Safari */
+  transition: background-color 0.3s;
+}
+
+.code {
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  top: -2em;
+  left: 15em;
+  color: #ffe180;
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: color 0.5s;
+}
+
+.code:hover{
+  -webkit-transition: color 0.5s; /* Safari */
+  transition: color 0.5s;
+  color: #8dc63f;
+}
+
+.choice:hover {
+  -webkit-transition: background-color 0.3s; /* Safari */
+  transition: background-color 0.3s;
+  background-color: #0082ca;
+}
+
+.other {
+  background-color: #8eb3da;
+  -webkit-transition: background-color 0.3s; /* Safari */
+  transition: background-color 0.3s;
+}
+
+.other:hover {
+  -webkit-transition: background-color 0.3s; /* Safari */
+  transition: background-color 0.3s;
+  background-color: #c2d6ec;
+}
+
+#container {
+  background-color: rgb(227, 227, 227);
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width: 56%;
+  margin: 0 auto;
+}
