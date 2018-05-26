@@ -22,7 +22,11 @@ header {
   width: 100vw;
   background-color: rgb(22, 89, 172);
   color: rgb(209, 209, 209);
-  padding: 2em;
+  padding-top: 2em;
+}
+
+header p {
+  padding: .8em 0;
 }
 
 /* Navs within header */
@@ -30,21 +34,47 @@ header {
 nav ul{
   display: flex;
   flex-direction: row;
-  width: 100vw; /* BUG  issue with header's padding */
-  background-color: rgb(231, 174, 210);
+  width: 100vw;
   height: 3em;
+  /* BUG need to set the boundarys to border-box */
 }
 
 nav li {
   display: block;
   list-style: none;
+  vertical-align: middle;
+  line-height: 3em;
   width: 20vw;
+  height: 100%;
+  border: 1px solid rgb(45, 16, 84);
 }
 
 nav li a {
+  display: block;
   width: 100%;
   height: 100%;
+  text-decoration: none;
+  color: rgb(106, 106, 106);
+  background-color: rgb(231, 174, 210);
+  -webkit-transition: background-color 0.15s; /* Safari */
+  transition: background-color 0.15s;
 }
+
+nav li a:hover {
+  background-color: rgb(128, 73, 107);
+  -webkit-transition: background-color 0.15s; /* Safari */
+  transition: background-color 0.15s;
+}
+
+footer {
+  width: 100vw;
+  margin-top: 1em;
+  background-color: rgb(125, 117, 62);
+  line-height: 4em;
+  height: 4em;
+}
+
+
 
 
 
@@ -78,23 +108,6 @@ nav li a {
   transition: background-color 0.3s;
 }
 
-.code {
-  text-decoration: none;
-  vertical-align: middle;
-  position: relative;
-  top: -2em;
-  left: 15em;
-  color: #ffe180;
-  -webkit-transition: color 0.5s; /* Safari */
-  transition: color 0.5s;
-}
-
-.code:hover{
-  -webkit-transition: color 0.5s; /* Safari */
-  transition: color 0.5s;
-  color: #8dc63f;
-}
-
 .choice:hover {
   -webkit-transition: background-color 0.3s; /* Safari */
   transition: background-color 0.3s;
@@ -114,10 +127,12 @@ nav li a {
 }
 
 #container {
+  margin: 0 auto;
+  margin-top: 1em;
   background-color: rgb(227, 227, 227);
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 50px;
   width: 56%;
-  margin: 0 auto;
+  min-height: 90vh;
 }
